@@ -1,0 +1,128 @@
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: rgb(227, 248, 255); */
+        
+    }
+
+    [class*="col"] {
+        border: 2px solid aqua;
+        color: red;
+    }
+
+    [class*="row"] {
+        margin-top: 1rem;
+    }
+
+    .row1 {
+        min-height: 15rem;
+    }
+
+    .row2 {
+        min-height: 30rem;
+    }
+
+
+
+   
+
+    .Card {
+        border-radius: 20px;
+    }
+
+ 
+    .left{
+        position: relative;
+    }
+
+    .left_bar{
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .description{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70%;
+    }
+
+    .scroll{
+        margin-top: 0.5rem ;
+        padding-top: 0.5rem;
+        background-color: white;
+        height: 15rem;
+        overflow-x: auto;
+        overflow-y: auto;
+        text-align: justify;
+    }
+
+    .graph{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 3rem;
+    }
+
+    .day{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .bar{
+        width: 25px;
+        height: 4rem;
+        border: 2px solid rgb(29, 177, 235);
+        background-color: rgb(29, 177, 235);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    
+
+    .account1{
+        background-color: rgb(212, 238, 255);
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .account_details{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        display: flex;
+    }
+
+    .mastercard_logo{
+        width: 27%;
+        padding-right: 15px;
+    }
+
+    .row2-sub1{
+        border-radius: 20px;
+        background-color: 	rgb(243, 212, 72);
+    }
+    .row2-sub2{
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    .icon i{
+        font-size: 25px;
+        color: rgb(162, 162, 162);
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
