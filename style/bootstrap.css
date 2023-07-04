@@ -2,12 +2,22 @@
     * {
         margin: 0px;
         padding: 0px;
-        /* background-color: rgb(227, 248, 255); */
         
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Roboto', sans-serif;  */
+        /* font-weight: 700; */
+    }
+
+    body{
+        background-color:rgb(212, 238, 255);;
+    }
+
+    h4{
+        font-weight: 700;
     }
 
     [class*="col"] {
-        color: rgb(96, 95, 95);
+       
     }
 
     [class*="row"] {
@@ -23,6 +33,7 @@
     }
 
 
+   
 
    .input_search{
         border: none;
@@ -37,7 +48,13 @@
    }
 
     .Card {
-        border-radius: 20px;
+        border-radius: 30px;
+        background-color: white;
+    }
+
+    .stat {
+        border-radius: 30px;
+        background-color: white;
     }
 
     .left{
@@ -50,25 +67,37 @@
 
     .left_bar{
         position: absolute;
-        border: 2px solid black;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100px;
         height: 95%;
-        margin: auto;
+        margin-top: 40px;
         border-radius: 35px ;
         justify-content: center;
         text-align: center;
+        background-color: white;
     }
+
+    .hide_input{
+        /* -webkit-appearance: none; */
+        visibility: hidden;
+        display: none;
+     }
+    
+
+     #bars, #times{
+        display: none;
+     }
+    
 
     .icon {
         background-color: rgb(229, 228, 228);
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         width: 50%;
         margin: 5px auto;
-        padding: 15px;
+        padding: 10px;
         border-radius: 100px;
         transition: box-shadow 1s;
     }
@@ -76,45 +105,54 @@
     .icon:hover{
         cursor: pointer;
         box-shadow: 3px 3px 10px gray;
+        background-color: rgb(255, 233, 133);
     }
 
     .description{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 70%;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .image_area{
+        width: 45%;
+        margin: 5px;
     }
 
     .scroll{
-        margin-top: 0.5rem ;
-        padding-top: 0.5rem;
         background-color: white;
-        height: 15rem;
+        height: 240px;
         overflow-x: hidden;
         overflow-y: auto;
         text-align: justify;
-        margin-bottom: 0.7rem;
     }
 
     .graph{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 3rem;
+        padding-top: 33px;
     }
 
     .day{
         display: flex;
         flex-direction: column;
-        
     }
 
     .bar{
         width: 25px;
         height: 4rem;
-        border: 2px solid rgb(29, 177, 235);
-        background-color: rgb(29, 177, 235);
+        background-color: rgb(250, 161, 161);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+
+
+    .text{
+        font-size: 11px;
+        color: rgb(151, 151, 151);
     }
 
     
@@ -122,8 +160,8 @@
     .account1{
         background-color: rgb(212, 238, 255);
         border-radius: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 6px;
+        padding-bottom: 7px;
     }
 
     .account_details{
@@ -134,25 +172,128 @@
     }
 
     .mastercard_logo{
-        width: 27%;
+        width: 75px;
         padding-right: 15px;
     }
 
     .row2-sub1{
         border-radius: 20px;
-        background-color: 	rgb(243, 212, 72);
+        background-color: 	rgb(255, 233, 133);
     }
+
     .row2-sub2{
-        border: 2px solid black;
         border-radius: 20px;
         background-color: white;
-        padding-left: 10px;
+        padding: 10px;
+    }
+
+
+    .row2-sub2 p{
+        font-size: 14px;
     }
 
     
+    .list{
+        background-color: rgb(212, 238, 255);
+        border-radius: 20px;
+    }
 
+    li{
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    span{
+        color: rgb(251, 94, 94);
+    }
 
     img{
         width: 100%;
         height: 100%;
+    }
+
+    .profile{
+        display: flex;
+    }
+
+    .profile p{
+        font-weight: 700;
+        margin-bottom: 0px;
+        padding: 2px;
+    }
+
+    .profile i{
+        background-color: rgb(229, 228, 228);
+        color: white;
+        font-size: 18px;
+        width: 26%;
+        padding: 10px;
+        border-radius: 60px;
+        transition: box-shadow 1s;
+       
+    }
+
+    .profile i:hover{
+        cursor: pointer;
+        box-shadow: 3px 3px 10px gray;
+        background-color: rgb(240, 186, 186);
+    }
+
+    .btn{
+        /* align-items: center; */
+        color: black;
+        top: 60px;
+        right: 30px;
+        background-color: rgb(78, 74, 74);
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+    }
+
+   
+   
+
+    
+
+    @media screen and (max-width:768px) {
+        .left_bar{
+            height: 500px;
+            width: 100px;
+            position: absolute;
+            /* background: #161616; */
+            z-index: 1;
+            transition: 0.15s ease;
+            transform: translateX(120px);
+            display: none;
+            border: none;
+        }
+
+         
+
+         .hide_span{
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            font-size: 25px;
+            border-radius: 3px;
+            color: #fff;
+            padding: 3px 8px;
+            cursor: pointer  ;
+        }
+
+        #bars{
+            color: black;
+            display: block;
+        }
+
+        #check:checked ~ .left_bar  {
+            transform: translateX(0);
+            display: block;
+        }
+
+        #check:checked ~ .left_bar #bars {
+            display: none;
+        }
+
+       
     }
