@@ -330,9 +330,15 @@
 
         }
 
-        .profile p{
+        /* .profile p{
             display: none;
-        }
+        } */
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            
+        } 
 
         .account1 {
             padding-right: 7px;
@@ -427,13 +433,20 @@
             font-size: 30px;
            }
 
-        .profile p{
-            display: none;
-        }  
+           .profile {
+                display: flex;
+                flex-direction: column;
+                
+            } 
         
         .bar {
             width: 33px;
             height: 90px;
+        }
+
+
+        .row2-sub2 p{
+            font-size: 13px;
         }
 
     }
@@ -452,7 +465,7 @@
             display: flex;
             flex-direction: column;
             
-        }
+        } 
 
         .row2-sub2 p{
             font-size: 10px;
