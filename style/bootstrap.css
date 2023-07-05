@@ -364,7 +364,7 @@
             height: 500px;
             width: 100px;
             position: absolute;
-            /* background: #161616; */
+            background-color: transparent;
             z-index: 1;
             transition: 0.15s ease;
             transform: translateX(120px);
