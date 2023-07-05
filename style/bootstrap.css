@@ -9,7 +9,14 @@
     }
 
     body{
-        background-color:rgb(212, 238, 255);;
+        background-color:rgb(212, 238, 255);
+    }
+
+    .main{
+        margin: 20px auto;
+        background-color:rgb(212, 238, 255);
+        border: 10px solid white;
+        border-radius: 20px;
     }
 
     h4{
@@ -17,7 +24,7 @@
     }
 
     [class*="col"] {
-       
+        /* border: 1px solid black; */
     }
 
     [class*="row"] {
@@ -129,6 +136,10 @@
         text-align: justify;
     }
 
+    small{
+        color: gray;
+    }
+
     .graph{
         display: flex;
         flex-direction: row;
@@ -144,7 +155,7 @@
     .bar{
         width: 25px;
         height: 4rem;
-        background-color: rgb(250, 161, 161);
+        background-color: rgb(72, 167, 240);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -153,6 +164,7 @@
     .text{
         font-size: 11px;
         color: rgb(151, 151, 151);
+        font-family: monospace;
     }
 
     
@@ -223,7 +235,7 @@
     }
 
     .profile i{
-        background-color: rgb(229, 228, 228);
+        background-color: rgb(253, 239, 239);
         color: white;
         font-size: 18px;
         width: 26%;
@@ -239,8 +251,8 @@
         background-color: rgb(240, 186, 186);
     }
 
-    .btn{
-        /* align-items: center; */
+    /* .btn{
+       
         color: black;
         top: 60px;
         right: 30px;
@@ -248,10 +260,90 @@
         width: 35px;
         height: 35px;
         border-radius: 20px;
-    }
+    } */
 
    
-   
+   @media screen and (max-width: 1200px) {
+        h2{
+            font-size: 25px;
+        }
+
+        .bar{
+            width: 20px;
+            height: 64px;
+            background-color: rgb(250, 161, 161);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .profile{
+            padding: 0px;
+        }
+
+
+        .profile i{
+            text-align: start;
+            font-size: 18px;
+            width: 40px;
+            border-radius: 60px;
+
+        }
+
+   }
+   @media screen and (max-width: 992px) {
+        h2{
+            
+            font-size: 19px;
+            padding-top: 12px;
+            
+        }
+
+        .profile i{
+            text-align: start;
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+            border-radius: 65px;
+
+        }
+
+       
+
+        .graph {
+            padding-top: 13px;
+            gap: 2px;
+        }
+
+        .bar {
+            width: 13px;
+            height: 64px;
+        }
+
+        .text {
+            font-size: 8px;
+
+        }
+
+        .profile p{
+            display: none;
+        }
+
+        .account1 {
+            padding-right: 7px;
+        }
+
+        .Card-body{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+            padding-right: 0px;
+        }
+
+        .mastercard_logo {
+            padding-right: 5px;
+            object-fit: cover;
+        }
+   }
 
     
 
@@ -284,6 +376,7 @@
         #bars{
             color: black;
             display: block;
+            padding-top: 25px;
         }
 
         #check:checked ~ .left_bar  {
@@ -295,5 +388,62 @@
             display: none;
         }
 
-       
+       h2{
+        font-size: 30px;
+       }
+
+
+       .profile p{
+            display: block;
+        }
+
+      
+        .Card-body {
+            padding-left: 15px;
+        }
+
+        .bar {
+            width: 28px;
+            height: 90px;
+        }
     }
+
+    @media screen and (min-width:375px) and (max-width: 576px )  {
+        h2{
+            font-size: 30px;
+           }
+
+        .profile p{
+            display: none;
+        }  
+        
+        .bar {
+            width: 33px;
+            height: 90px;
+        }
+
+    }
+
+    @media screen and (max-width:375px){
+        h2{
+            font-size: 28px;
+           }
+
+        .bar {
+            width: 23px;
+            height: 90px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .row2-sub2 p{
+            font-size: 10px;
+        }
+    }
+
+
+
