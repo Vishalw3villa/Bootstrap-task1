@@ -25,10 +25,12 @@
 
     [class*="col"] {
         /* border: 1px solid black; */
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     [class*="row"] {
-        margin-top: 1rem;
+        margin-top: 10px;
     }
 
     .row1 {
@@ -266,6 +268,7 @@
    @media screen and (max-width: 1200px) {
         h2{
             font-size: 25px;
+            padding-top: 12px;
         }
 
         .bar{
@@ -293,9 +296,12 @@
    @media screen and (max-width: 992px) {
         h2{
             
-            font-size: 19px;
-            padding-top: 12px;
+            font-size: 28px;
+        }
+
+        small {
             
+            font-size: 10px;
         }
 
         .profile i{
@@ -347,7 +353,7 @@
 
     
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:767px) {
         .left_bar{
             height: 500px;
             width: 100px;
@@ -360,12 +366,17 @@
             border: none;
         }
 
+
+        .menu-bar{
+            position: relative;
+            padding: 0px;
+        }
+
          
 
          .hide_span{
             position: absolute;
-            left: 20px;
-            top: 30px;
+            left: 30px;
             font-size: 25px;
             border-radius: 3px;
             color: #fff;
@@ -373,10 +384,13 @@
             cursor: pointer  ;
         }
 
+        .input_search {
+            margin-left: 27px;
+        }
+
         #bars{
             color: black;
             display: block;
-            padding-top: 25px;
         }
 
         #check:checked ~ .left_bar  {
